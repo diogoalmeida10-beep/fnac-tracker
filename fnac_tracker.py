@@ -6,8 +6,8 @@ import time
 # --------------------------
 # TELEGRAM SETTINGS
 # --------------------------
-BOT_TOKEN = "YOUR_TELEGRAM_BOT_TOKEN"
-CHAT_ID = "YOUR_CHAT_ID"
+BOT_TOKEN = 8257351230:AAH-ZFugrpnmIJPGlmFQ174tRVHIFqKQbNK
+CHAT_ID = 622090807
 
 def send_telegram(message):
     url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
