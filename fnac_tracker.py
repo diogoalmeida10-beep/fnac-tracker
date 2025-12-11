@@ -1,3 +1,25 @@
+import os
+import requests
+from bs4 import BeautifulSoup
+from fake_useragent import UserAgent
+import time
+
+BOT_TOKEN = os.getenv(
+8257351230:AAH-ZFugrpnmIJPGlmFQ174tRVHIFqKQbNK)
+CHAT_ID = os.getenv(622090807
+)
+
+if not BOT_TOKEN or not CHAT_ID:
+    raise ValueError("BOT_TOKEN and CHAT_ID must be set in environment variables!")
+
+def send_telegram(message):
+    url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
+    data = {"chat_id": CHAT_ID, "text": message}
+    requests.post(url, data=data)
+
+
+
+
 import requests
 from bs4 import BeautifulSoup
 from fake_useragent import UserAgent
